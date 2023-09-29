@@ -62,8 +62,46 @@ namespaceess numberGuess
     Console.WriteLine("Minimum: " + rangeMin);
     Console.WriteLine("Maximum: " + rangeMax);
     Console.WriteLine("Nun. Guesses: " + numGuesses);
+
+    // START THE MATCH!
+    while (playerScore !=3 && cpuScore) {
+        // Any code you want to run BEFORE each round goes
+        // GENERATE SECRET NUMBER
+
+        // START EACH ROUND
+        for (int i = 0; i < numGuesses ; i++) {
+            // Code to guess number goes here.
+            // GENERATE SECRET NUMBER
+            Random rndNum = new Random();
+            secretNumber = rndNum.Next(0,100);
+            Console.WriteLine("Player Score: " + playerScore + "\n");
+            Console.WriteLine("CPU Score: " + cpuScore + "\n");
+            // START EACH ROUND
+            for (int i = 0; i < numGuesses ; i++) {
+                // Code to guess number goes here.
+                Console.WriteLine("You have used " + numAttempts + "This round");
+                Console.WriteLine("You must guess between " + rangeMin + "and " + rangeMax + "./n");
+                playerGuess = System.Convert.ToInt32(Console.ReadLine());
+            }   if (playerGuess == secretNumber)
+                    // Print a success message!
+                    playerScore++;
+                    break;
+                } else {
+                    if (playerGuess > secretNumber) {
+                        Console.WriteLine("Your guess is too high!\n")
+                } else {
+                    Console.WriteLine("Your guess is too low!\n);
+                }
+            }
+            numAttempts++;
+    }
+    if (playerGuess != secretNumber) {
+        cpuScore++
+    }
+        }
 }
     class numberGuess
     {
         static void Main(string[] args)
     }
+ 
