@@ -1,4 +1,4 @@
-// Alexander Jones, Program Template, v0.0
+// Alexander Jones, Program Template, v0.5
 using System;
 
 namespace UpdateForEachProgram
@@ -38,13 +38,21 @@ namespace UpdateForEachProgram
 
 
 
+
+static void MakeEggs(int num, string style)
+{
+    Console.WriteLine("You have ordered" + num + "eggs cooked " + style + ".\n");
+}
+
+
+
         static void Main(string[] args
         {
 
             //MyMethod();
             //DoubleUp();
             MakePancakes();
-            
+            MakeEggs(10, "sunny side up");
         }
         
         
