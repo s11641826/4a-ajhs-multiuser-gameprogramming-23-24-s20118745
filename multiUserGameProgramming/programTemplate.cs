@@ -39,6 +39,55 @@ namespace UpdateForEachProgram
 
 
 
+
+        static void MakeBurger(int num = 1)
+        {
+            Console.WriteLine("I am going to cook " + num "humburgers.\n");
+        }
+
+        static void AllMyChildren(string child1, string child2, string child3)
+        {
+            Console.WriteLine("My favorite child is " + child3);
+        }
+
+        // METHOD OVERLOADING
+        static double FindSum(int x, int y)
+        {
+            int sumn = x + y;
+            Console.WriteLine("Sum: " + sumn);
+            return sum;
+        }
+       
+        static void Main(string[] args)
+        {
+            //MyMethod();
+            //DoubleUp();
+            //MakePancakes();
+            //MakeEggs(10, "sunny side up");
+            //MakeBurger(10);
+            //AllMyChildren(child3: "Steve"), child2: "Susan", child1: "Chewbacca");
+            FindSum(1,5); // TWO INTEGERS
+            FindSum(9.5, 2.4); // TWO DOUBLES
+            FindSum(5, 2.5); // ONE OF EACH
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 static void MakeEggs(int num, string style)
 {
     Console.WriteLine("You have ordered" + num + "eggs cooked " + style + ".\n");
