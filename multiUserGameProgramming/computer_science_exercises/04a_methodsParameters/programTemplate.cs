@@ -1,4 +1,9 @@
 // Alexander Jones, Program Template, v0.5
+/* 
+You have a significant number of syntax errors in this code. You need to look
+at my example as well as test your code using https://onlinegdb.com to find and
+remove the syntax errors. 
+*/ 
 using System;
 
 namespace UpdateForEachProgram
